@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1EF77F45-93F4-4CE9-AA6F-4643394F560E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsCaliforniaAPI", "ProductsCaliforniaAPI\ProductsCaliforniaAPI.csproj", "{163099BF-13AA-4F55-B4C5-B0AD432D3209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{8B67CDA5-C07D-481D-86C7-6A01B22104A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163099BF-13AA-4F55-B4C5-B0AD432D3209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163099BF-13AA-4F55-B4C5-B0AD432D3209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163099BF-13AA-4F55-B4C5-B0AD432D3209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163099BF-13AA-4F55-B4C5-B0AD432D3209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B67CDA5-C07D-481D-86C7-6A01B22104A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B67CDA5-C07D-481D-86C7-6A01B22104A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B67CDA5-C07D-481D-86C7-6A01B22104A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B67CDA5-C07D-481D-86C7-6A01B22104A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{163099BF-13AA-4F55-B4C5-B0AD432D3209} = {1EF77F45-93F4-4CE9-AA6F-4643394F560E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3167EA8F-BCC6-458A-BFFF-375F98AC4185}
+	EndGlobalSection
+EndGlobal
