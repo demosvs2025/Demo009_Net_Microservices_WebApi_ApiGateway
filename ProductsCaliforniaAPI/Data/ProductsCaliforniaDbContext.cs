@@ -5,7 +5,7 @@ namespace ProductsCaliforniaAPI.Data
 {
     public class ProductsCaliforniaDbContext : DbContext
     {
-        public ProductsCaliforniaDbContext(DbContextOptions options) : base(options)
+        public ProductsCaliforniaDbContext(DbContextOptions<ProductsCaliforniaDbContext> options) : base(options)
         {
         }
         public DbSet<ProductCalifornia> ProductsCalifornia { get; set; }

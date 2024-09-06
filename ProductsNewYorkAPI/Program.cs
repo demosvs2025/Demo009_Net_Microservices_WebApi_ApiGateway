@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ProductsCaliforniaAPI.Data;
+using ProductsNewYorkAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<ProductsCaliforniaDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApi002_ProductsCalifornia")));
-
+builder.Services.AddDbContext<ProductsNewYorkDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApi002_ProductsNewYork")));
 
 var app = builder.Build();
 
@@ -22,8 +21,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

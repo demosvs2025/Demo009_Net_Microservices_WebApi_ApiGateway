@@ -10,6 +10,18 @@
         }
       ],
       "UpstreamPathTemplate": "/api/ProductCalifornia",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ProductNewYork",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5282
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ProductNewYork",
       "UpstreamHttpMethod": [ "GET" ]
     }
 

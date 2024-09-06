@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SalesBusinessAppMVC.Models.ProductNewYork>
+@{
+    ViewData["Title"] = "New York products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>New York products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => product.Description)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
