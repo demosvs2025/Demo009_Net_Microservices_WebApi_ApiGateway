@@ -26,7 +26,7 @@ namespace ProductsCaliforniaAPI.Controllers
 
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<ProductCalifornia>> Get(int id)
+        public async Task<ActionResult<ProductCalifornia>> GetProductCaliforniaById(int id)
         {
             ProductCalifornia? productCalifornia = await context.ProductsCalifornia.FindAsync(id);
 
@@ -38,10 +38,9 @@ namespace ProductsCaliforniaAPI.Controllers
             return Ok(productCalifornia);
         }
 
-        //public ActionResult Post([FromBody] ProductCaliforniaDto productCaliforniaDto)
 
         [HttpPost]
-        public async Task<ActionResult> Post(ProductCaliforniaDto productCaliforniaDto)
+        public async Task<ActionResult> PostProductCalifornia(ProductCaliforniaDto productCaliforniaDto)
         {
             ProductCalifornia productCalifornia = new ProductCalifornia()
             { 
@@ -56,7 +55,7 @@ namespace ProductsCaliforniaAPI.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put(int id, ProductCaliforniaDto productCaliforniaDto)
+        public async Task<ActionResult> PutProductCalifornia(int id, ProductCaliforniaDto productCaliforniaDto)
         {
             ProductCalifornia? productCalifornia = await context.ProductsCalifornia.FindAsync(id);
 
@@ -76,7 +75,7 @@ namespace ProductsCaliforniaAPI.Controllers
 
         
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<ActionResult> DeleteProductCalifornia(int id)
         {
             ProductCalifornia? productCalifornia = await context.ProductsCalifornia.FindAsync(id);
 
